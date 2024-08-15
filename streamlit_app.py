@@ -12,9 +12,9 @@ with st.sidebar:
 
 st.header("This is a header with a divider", divider="rainbow")
 
-st.markdown("This is cread using st.markdown.")
+st.markdown("This is created using st.markdown.")
 
-st.subheader("st,column")
+st.subheader("This was creatd using st.column")
 col1, col2 = st.columns(2)
 
 with col1:
@@ -23,6 +23,6 @@ with col1:
 with col2:
     st.write("The  value of :blue[***x***] is ", x)
 
-st.subheader("st.area_chart")
+st.subheader("This was created using st.area_chart")
 chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
 st.area_chart(chart_data)
